@@ -1,0 +1,31 @@
+{
+  "permissions": {
+    "additionalDirectories": ["~/work-notes"],
+    "allow": [
+      "Bash(git status)",
+      "Bash(git diff *)",
+      "Bash(git log *)",
+      "Bash(git show *)",
+      "Bash(git branch *)",
+      "Bash(git merge-base *)",
+      "Bash(gh pr view *)",
+      "Bash(npm test *)",
+      "Bash(npm run lint *)",
+      "Bash(npm run typecheck *)",
+      "Bash(npx tsc --noEmit *)",
+      "Bash(yarn test *)",
+      "Bash(yarn lint *)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(gh pr create *)",
+      "Bash(npm install *)",
+      "Bash(yarn add *)"
+    ],
+    "deny": [
+      "Bash(git push --force *)",
+      "Read(./.env)",
+      "Read(./.env.*)"
+    ]
+  }
+}
